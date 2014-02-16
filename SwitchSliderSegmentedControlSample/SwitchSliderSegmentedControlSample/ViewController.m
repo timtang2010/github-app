@@ -30,6 +30,7 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    NSLog(@"didReceiveMemoryWarning");
 }
 
 //始两个开关保持一致
