@@ -18,7 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.scrollView.contentSize = CGSizeMake(320, 700);
+    //设置视图的长度与高度
+    self.scrollView.contentSize = CGSizeMake(320, 800);
     
 }
 
@@ -28,13 +29,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+//设定ScrollView视图沿y轴正偏移110点的代码如下
 - (void)viewDidAppear:(BOOL)animated
 {
 //    [self.scrollView setContentOffset:CGPointMake(0, 110) animated:YES];
-//    
+//    //    self.scrollView.contentOffset = CGPointMake(0, 110);
 //    NSLog(@"self.scrollView.contectSize %f,%f", self.scrollView.contentSize.height, self.scrollView.contentSize.width);
-//    
 //    [super viewDidAppear:YES];
+    
     //注册键盘出现的通知
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardDidShow:)
