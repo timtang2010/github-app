@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="886-po-XMP"/>
+                        <viewControllerLayoutGuide type="bottom" id="bjh-BY-zca"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-K8-qhS">
+                                <rect key="frame" x="138" y="52" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.51372551918029785" green="0.70980393886566162" blue="0.92156869173049927" alpha="1" colorSpace="deviceRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jL8-ml-jrS">
+                                <rect key="frame" x="105" y="135" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="W6T-mV-hxf"/>
+                                </constraints>
+                                <state key="normal" title="Upload">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startToMove:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rij-60-4E5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7W-52-7MK">
+                                <rect key="frame" x="104" y="305" width="104" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="Ssv-cO-03Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadProgress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kSi-qn-bsc"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6hG-mU-M1l">
+                                <rect key="frame" x="14" y="234" width="285" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="18e-jm-c4d"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6hG-mU-M1l" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="14" id="7ty-h1-rcD"/>
+                            <constraint firstItem="J7W-52-7MK" firstAttribute="centerX" secondItem="6hG-mU-M1l" secondAttribute="centerX" id="AkO-hA-LuA"/>
+                            <constraint firstItem="lUJ-K8-qhS" firstAttribute="top" secondItem="886-po-XMP" secondAttribute="bottom" constant="32" id="Jp2-lD-aaT"/>
+                            <constraint firstItem="jL8-ml-jrS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="105" id="XqX-wQ-ywM"/>
+                            <constraint firstItem="J7W-52-7MK" firstAttribute="top" secondItem="6hG-mU-M1l" secondAttribute="bottom" constant="69" id="dtT-wf-pSY"/>
+                            <constraint firstItem="lUJ-K8-qhS" firstAttribute="centerX" secondItem="6hG-mU-M1l" secondAttribute="centerX" id="hIj-G9-ASD"/>
+                            <constraint firstItem="jL8-ml-jrS" firstAttribute="top" secondItem="lUJ-K8-qhS" secondAttribute="bottom" constant="46" id="yfP-2U-3LA"/>
+                            <constraint firstItem="6hG-mU-M1l" firstAttribute="top" secondItem="jL8-ml-jrS" secondAttribute="bottom" constant="69" id="zgf-TO-BWG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myActivityIndicatorView" destination="lUJ-K8-qhS" id="CCH-ZN-xyx"/>
+                        <outlet property="myProgressView" destination="6hG-mU-M1l" id="gX5-nP-eYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="8"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
