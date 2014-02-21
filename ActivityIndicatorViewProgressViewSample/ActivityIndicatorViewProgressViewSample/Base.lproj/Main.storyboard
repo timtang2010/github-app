@@ -25,7 +25,7 @@
                                 <rect key="frame" x="105" y="135" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="W6T-mV-hxf"/>
+                                    <constraint firstAttribute="width" constant="104" id="MsS-J4-jf5"/>
                                 </constraints>
                                 <state key="normal" title="Upload">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,7 +38,7 @@
                                 <rect key="frame" x="104" y="305" width="104" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="Ssv-cO-03Y"/>
+                                    <constraint firstAttribute="width" constant="104" id="Upa-mw-obe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Download">
@@ -49,23 +49,23 @@
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6hG-mU-M1l">
-                                <rect key="frame" x="14" y="234" width="285" height="2"/>
+                                <rect key="frame" x="15" y="234" width="285" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="18e-jm-c4d"/>
+                                    <constraint firstAttribute="width" constant="285" id="XnS-MQ-gn0"/>
                                 </constraints>
                             </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6hG-mU-M1l" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="14" id="7ty-h1-rcD"/>
-                            <constraint firstItem="J7W-52-7MK" firstAttribute="centerX" secondItem="6hG-mU-M1l" secondAttribute="centerX" id="AkO-hA-LuA"/>
-                            <constraint firstItem="lUJ-K8-qhS" firstAttribute="top" secondItem="886-po-XMP" secondAttribute="bottom" constant="32" id="Jp2-lD-aaT"/>
-                            <constraint firstItem="jL8-ml-jrS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="105" id="XqX-wQ-ywM"/>
-                            <constraint firstItem="J7W-52-7MK" firstAttribute="top" secondItem="6hG-mU-M1l" secondAttribute="bottom" constant="69" id="dtT-wf-pSY"/>
-                            <constraint firstItem="lUJ-K8-qhS" firstAttribute="centerX" secondItem="6hG-mU-M1l" secondAttribute="centerX" id="hIj-G9-ASD"/>
-                            <constraint firstItem="jL8-ml-jrS" firstAttribute="top" secondItem="lUJ-K8-qhS" secondAttribute="bottom" constant="46" id="yfP-2U-3LA"/>
-                            <constraint firstItem="6hG-mU-M1l" firstAttribute="top" secondItem="jL8-ml-jrS" secondAttribute="bottom" constant="69" id="zgf-TO-BWG"/>
+                            <constraint firstItem="jL8-ml-jrS" firstAttribute="top" secondItem="lUJ-K8-qhS" secondAttribute="bottom" constant="46" id="6zX-Ku-WlS"/>
+                            <constraint firstItem="J7W-52-7MK" firstAttribute="top" secondItem="6hG-mU-M1l" secondAttribute="bottom" constant="69" id="GcS-Zp-aI2"/>
+                            <constraint firstItem="lUJ-K8-qhS" firstAttribute="top" secondItem="886-po-XMP" secondAttribute="bottom" constant="32" id="N82-Qz-iJx"/>
+                            <constraint firstItem="lUJ-K8-qhS" firstAttribute="centerX" secondItem="J7W-52-7MK" secondAttribute="centerX" id="OKp-bf-Zi9"/>
+                            <constraint firstItem="6hG-mU-M1l" firstAttribute="top" secondItem="jL8-ml-jrS" secondAttribute="bottom" constant="69" id="Vvu-Yb-r4z"/>
+                            <constraint firstAttribute="trailing" secondItem="6hG-mU-M1l" secondAttribute="trailing" constant="20" symbolic="YES" id="czq-ph-sNa"/>
+                            <constraint firstItem="J7W-52-7MK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="104" id="fE8-b7-fUJ"/>
+                            <constraint firstItem="6hG-mU-M1l" firstAttribute="centerX" secondItem="jL8-ml-jrS" secondAttribute="centerX" id="p6v-gG-HNW"/>
                         </constraints>
                     </view>
                     <connections>

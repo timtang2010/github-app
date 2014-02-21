@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iku-Jm-vio">
-                                <rect key="frame" x="95" y="99" width="130" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iku-Jm-vio">
+                                <rect key="frame" x="95" y="99" width="130" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="BSk-Wu-5qX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Test 警告框">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,8 +30,8 @@
                                     <action selector="testAlertView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zvi-LD-c7K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owN-42-1Y5">
-                                <rect key="frame" x="95" y="162" width="130" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owN-42-1Y5">
+                                <rect key="frame" x="95" y="162" width="130" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Test 操作表">
@@ -40,6 +43,13 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="owN-42-1Y5" firstAttribute="leading" secondItem="Iku-Jm-vio" secondAttribute="leading" id="Bx6-mL-Yxx"/>
+                            <constraint firstItem="owN-42-1Y5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="162" id="JKu-F3-2Vh"/>
+                            <constraint firstItem="Iku-Jm-vio" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="99" id="Uo3-SM-Jng"/>
+                            <constraint firstItem="owN-42-1Y5" firstAttribute="trailing" secondItem="Iku-Jm-vio" secondAttribute="trailing" id="c2g-tg-phA"/>
+                            <constraint firstAttribute="centerX" secondItem="Iku-Jm-vio" secondAttribute="centerX" id="x1O-jY-v0w"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
