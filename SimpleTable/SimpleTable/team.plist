@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<array>
+		<string>A1-南非</string>
+		<string>A2-墨西哥</string>
+		<string>B1-阿根廷</string>
+		<string>B2-尼日利亚</string>
+		<string>C1-英格兰</string>
+		<string>C2-美国</string>
+		<string>D1-德国</string>
+		<string>D2-澳大利亚</string>
+		<string>E1-荷兰</string>
+		<string>E2-丹麦</string>
+		<string>G1-巴西</string>
+		<string>G2-朝鲜</string>
+		<string>H1-西班牙</string>
+		<string>H2-瑞士</string>
+	</array>
+	<key>image</key>
+	<array>
+		<string>SouthAfrica</string>
+		<string>Mexico</string>
+		<string>Argentina</string>
+		<string>Nigeria</string>
+		<string>England</string>
+		<string>USA</string>
+		<string>Germany</string>
+		<string>Australia</string>
+		<string>Holland</string>
+		<string>Denmark</string>
+		<string>Brazil</string>
+		<string>NorthKorea</string>
+		<string>Spain</string>
+		<string>Switzerland</string>
+	</array>
+</dict>
+</plist>
