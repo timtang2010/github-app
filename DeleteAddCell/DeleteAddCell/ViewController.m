@@ -37,7 +37,8 @@
     
 }
 
-#pragma mark --UIViewController声明手气方法，用于响应视图编辑状态变化
+#pragma mark --UIViewController声明手势方法，用于响应视图编辑状态变化
+#pragma mark --UIViewController生命周期方法，用于响应视图编辑状态变化
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated
 {
     [super setEditing:editing animated:animated];
@@ -96,6 +97,21 @@
         //红色圈圈的包围一个减号,删除
         return UITableViewCellEditingStyleDelete;
     }
+    
+    return UITableViewCellEditingStyleNone;
+}
+
+//是否可以移动单元格
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    NSString *stringToMove = [self.listTeams objectAtIndex:sourceIndexPath.row];
+    [self.listTeams removeObjectAtIndex:sourceIndexPath.row];
+    [self.listTeams insertObject:stringToMove atIndex:destinationIndexPath.row];
 }
 
 //用于实现删除或插入处理
@@ -154,6 +170,5 @@
     [self.tableView setContentOffset:CGPointMake(0.0, cell.frame.origin.y)animated:YES];
     
 }
-
 
 @end
