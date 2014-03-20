@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>33FD4A84-2B33-458C-8A29-9E3525A92F9D</string>
+	<string>3C6D4561-11AA-4A57-80A0-339935F749A4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>PageNavigation</string>
+	<string>TabNavigationNib</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>73FADF84-0719-43AF-873F-E25AB110309A</key>
 		<string>https://github.com/timtang2010/github-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PageNavigation/PageNavigation.xcodeproj/project.xcworkspace</string>
+	<string>TabNavigationNib/TabNavigationNib.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>73FADF84-0719-43AF-873F-E25AB110309A</key>

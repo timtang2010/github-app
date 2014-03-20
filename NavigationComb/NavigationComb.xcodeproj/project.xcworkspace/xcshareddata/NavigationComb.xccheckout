@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>33FD4A84-2B33-458C-8A29-9E3525A92F9D</string>
+	<string>9098E5D2-0B21-4040-B800-6AD54DB261C6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>PageNavigation</string>
+	<string>NavigationComb</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>73FADF84-0719-43AF-873F-E25AB110309A</key>
+		<key>7D7FD60F-A44A-4433-9274-E250B3DE19AD</key>
 		<string>https://github.com/timtang2010/github-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PageNavigation/PageNavigation.xcodeproj/project.xcworkspace</string>
+	<string>NavigationComb/NavigationComb.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>73FADF84-0719-43AF-873F-E25AB110309A</key>
+		<key>7D7FD60F-A44A-4433-9274-E250B3DE19AD</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>73FADF84-0719-43AF-873F-E25AB110309A</string>
+	<string>7D7FD60F-A44A-4433-9274-E250B3DE19AD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>73FADF84-0719-43AF-873F-E25AB110309A</string>
+			<string>7D7FD60F-A44A-4433-9274-E250B3DE19AD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>github app</string>
 		</dict>
