@@ -12,4 +12,5 @@
 
 @property (nonatomic, strong) NSArray *listData;
 @property (nonatomic, strong) NSIndexPath *listIndexPath;
+
 @end
