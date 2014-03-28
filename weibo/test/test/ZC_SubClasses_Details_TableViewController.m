@@ -1,19 +1,18 @@
 //
-//  ZC_Subclasses_TableViewController.m
+//  ZC_SubClasses_Details_TableViewController.m
 //  test
 //
-//  Created by yuxin tang on 14-3-25.
+//  Created by yuxin tang on 14-3-27.
 //  Copyright (c) 2014年 v5mcs. All rights reserved.
 //
 
-#import "ZC_Subclasses_TableViewController.h"
 #import "ZC_SubClasses_Details_TableViewController.h"
 
-@interface ZC_Subclasses_TableViewController ()
+@interface ZC_SubClasses_Details_TableViewController ()
 
 @end
 
-@implementation ZC_Subclasses_TableViewController
+@implementation ZC_SubClasses_Details_TableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -43,48 +42,31 @@
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 0;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//#warning Incomplete method implementation.
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.listData count];
+    return 0;
 }
 
-/**/
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    NSInteger row = [indexPath row];
-    NSDictionary *dict = [self.listData objectAtIndex:row];
-    
-    cell.textLabel.text = [dict objectForKey:@"answer"];
     // Configure the cell...
     
     return cell;
 }
+*/
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"ShowSelected"]) {
-        ZC_SubClasses_Details_TableViewController *detailViewController = segue.destinationViewController;
-        
-        NSInteger selectedIndex = [[self.tableView indexPathForSelectedRow]row];
-        NSDictionary *dict = [self.listData objectAtIndex:selectedIndex];
-        
-        NSString *qusetion = [dict objectForKey:@"answer"];
-        detailViewController.title = qusetion;
-        
-    }
-}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

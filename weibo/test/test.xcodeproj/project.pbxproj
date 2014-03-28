@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A08B43718E3BF3200354CE2 /* ZC_SubClasses_Details_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08B43618E3BF3200354CE2 /* ZC_SubClasses_Details_TableViewController.m */; };
 		5A1549F618E183E800EA65B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1549F518E183E800EA65B7 /* Foundation.framework */; };
 		5A1549F818E183E800EA65B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1549F718E183E800EA65B7 /* CoreGraphics.framework */; };
 		5A1549FA18E183E800EA65B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1549F918E183E800EA65B7 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A08B43518E3BF3200354CE2 /* ZC_SubClasses_Details_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZC_SubClasses_Details_TableViewController.h; sourceTree = "<group>"; };
+		5A08B43618E3BF3200354CE2 /* ZC_SubClasses_Details_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZC_SubClasses_Details_TableViewController.m; sourceTree = "<group>"; };
 		5A1549F218E183E800EA65B7 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1549F518E183E800EA65B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A1549F718E183E800EA65B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,8 @@
 				5A154A2B18E18A3500EA65B7 /* ZC_Details_ViewController.m */,
 				5A154A2D18E18A8800EA65B7 /* ZC_Subclasses_TableViewController.h */,
 				5A154A2E18E18A8800EA65B7 /* ZC_Subclasses_TableViewController.m */,
+				5A08B43518E3BF3200354CE2 /* ZC_SubClasses_Details_TableViewController.h */,
+				5A08B43618E3BF3200354CE2 /* ZC_SubClasses_Details_TableViewController.m */,
 				5A154A0D18E183E800EA65B7 /* Images.xcassets */,
 				5A1549FC18E183E800EA65B7 /* Supporting Files */,
 			);
@@ -268,6 +273,7 @@
 				5A154A2F18E18A8800EA65B7 /* ZC_Subclasses_TableViewController.m in Sources */,
 				5A154A2C18E18A3500EA65B7 /* ZC_Details_ViewController.m in Sources */,
 				5A154A0218E183E800EA65B7 /* main.m in Sources */,
+				5A08B43718E3BF3200354CE2 /* ZC_SubClasses_Details_TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

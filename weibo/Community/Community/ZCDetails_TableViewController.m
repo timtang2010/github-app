@@ -1,19 +1,19 @@
 //
-//  ZC_Subclasses_TableViewController.m
-//  test
+//  ZCDetails_TableViewController.m
+//  Community
 //
-//  Created by yuxin tang on 14-3-25.
+//  Created by yuxin tang on 14-3-27.
 //  Copyright (c) 2014年 v5mcs. All rights reserved.
 //
 
-#import "ZC_Subclasses_TableViewController.h"
-#import "ZC_SubClasses_Details_TableViewController.h"
+#import "ZCDetails_TableViewController.h"
+#import "ZCSubclasses_TableViewController.h"
 
-@interface ZC_Subclasses_TableViewController ()
+@interface ZCDetails_TableViewController ()
 
 @end
 
-@implementation ZC_Subclasses_TableViewController
+@implementation ZCDetails_TableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -54,33 +54,33 @@
 {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.listData count];
+    return [self.listData count];;
 }
 
-/**/
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier     forIndexPath:indexPath];
     
     NSInteger row = [indexPath row];
     NSDictionary *dict = [self.listData objectAtIndex:row];
-    
-    cell.textLabel.text = [dict objectForKey:@"answer"];
     // Configure the cell...
     
+    cell.textLabel.text = [dict objectForKey:@"qusetion"];
     return cell;
 }
 
+//选择表视图行时候触发
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"ShowSelected"]) {
-        ZC_SubClasses_Details_TableViewController *detailViewController = segue.destinationViewController;
+        ZCSubclasses_TableViewController *detailViewController = segue.destinationViewController;
         
         NSInteger selectedIndex = [[self.tableView indexPathForSelectedRow]row];
         NSDictionary *dict = [self.listData objectAtIndex:selectedIndex];
         
-        NSString *qusetion = [dict objectForKey:@"answer"];
+        NSString *qusetion = [dict objectForKey:@"qusetion"];
         detailViewController.title = qusetion;
         
     }

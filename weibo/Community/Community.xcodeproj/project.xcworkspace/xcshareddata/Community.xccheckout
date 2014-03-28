@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>669FA1D1-2C7B-4658-9D2C-AF303A03E933</string>
+	<string>C6DB0426-BB07-4090-8DC9-D0B98F55662B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>test</string>
+	<string>Community</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B6FFE6F6-827E-4DB0-BF2D-9F3A95F82F83</key>
 		<string>https://github.com/timtang2010/github-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>weibo/test/test.xcodeproj/project.xcworkspace</string>
+	<string>weibo/Community/Community.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B6FFE6F6-827E-4DB0-BF2D-9F3A95F82F83</key>

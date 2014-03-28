@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  test
+//  Community
 //
-//  Created by yuxin tang on 14-3-25.
+//  Created by yuxin tang on 14-3-27.
 //  Copyright (c) 2014年 v5mcs. All rights reserved.
 //
 
@@ -12,10 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

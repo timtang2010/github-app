@@ -1,16 +1,14 @@
 //
 //  ViewController.h
-//  test
+//  Community
 //
-//  Created by yuxin tang on 14-3-25.
+//  Created by yuxin tang on 14-3-27.
 //  Copyright (c) 2014年 v5mcs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "ZC_Details_ViewController.h"
 
-
-@interface ZC_Sort_ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface ZCSort_ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
