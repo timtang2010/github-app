@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>军队问题</key>
+	<array>
+		<dict>
+			<key>qusetion</key>
+			<string>本人是农村退伍军人，1965年入伍，1970年回沪，后来享受征地养老，</string>
+			<key>Answer</key>
+			<string>农村籍退役士兵，凡在1954年11月1日至201</string>
+		</dict>
+		<dict>
+			<key>qusetion</key>
+			<string>女方为安徽户籍，男方目前跟随部队在上海服役，可以在上海办理结婚登记吗？</string>
+			<key>Answer</key>
+			<string>可以。但部队要出具相关证明，带好军官证或义务兵的</string>
+		</dict>
+	</array>
+	<key>婚姻问题</key>
+	<array>
+		<dict>
+			<key>qusetion</key>
+			<string>女方为丧偶，不慎遗失丈夫的死亡证明。如果女方再婚，是否影响领取结婚证？</string>
+			<key>Answer</key>
+			<string>如果女方的户口本上婚姻状况一栏显示丧偶，则女方再</string>
+		</dict>
+		<dict>
+			<key>qusetion</key>
+			<string>去本市婚姻登记部门办理复婚手续,结婚证上面的日期是不是和原来一样？</string>
+			<key>Answer</key>
+			<string>结婚证上面的日期是重新登记领证的日期。</string>
+		</dict>
+		<dict>
+			<key>qusetion</key>
+			<string>有了法院判决的离婚协议书后，还要再去民政部门换离婚证吗？</string>
+			<key>Answer</key>
+			<string>不需要，离婚判决书和离婚证具有同样的法律效力。</string>
+		</dict>
+	</array>
+</dict>
+</plist>
