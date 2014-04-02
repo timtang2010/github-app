@@ -20,11 +20,11 @@
 - (void)initArray
 {
     imageArray = [NSMutableArray arrayWithObjects:
-                  [UIImage imageNamed:@"project_img_1.jpg"],
-                  [UIImage imageNamed:@"project_img_2.jpg"],
-                  [UIImage imageNamed:@"project_img_3.jpg"],
-                  [UIImage imageNamed:@"project_img_4.jpg"],
-                  [UIImage imageNamed:@"project_img_5.jpg"],
+                  [UIImage imageNamed:@"project_img_1"],
+                  [UIImage imageNamed:@"project_img_2"],
+                  [UIImage imageNamed:@"project_img_3"],
+                  [UIImage imageNamed:@"project_img_4"],
+                  [UIImage imageNamed:@"project_img_5"],
                   nil];
     //存放图片的数组
 }
