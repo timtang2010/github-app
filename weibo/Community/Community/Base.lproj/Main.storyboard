@@ -399,10 +399,10 @@
                     <connections>
                         <outlet property="Done" destination="ZbA-pF-Dz0" id="5ym-8G-iZw"/>
                         <outlet property="address" destination="BGa-Jk-ZQi" id="C9j-hu-8El"/>
-                        <outlet property="area" destination="iOu-dV-2vq" id="arN-pD-4EQ"/>
+                        <outlet property="area" destination="iOu-dV-2vq" id="7J8-Ki-DnF"/>
                         <outlet property="claim" destination="UeH-Eb-zJY" id="Xzo-wD-CC1"/>
-                        <outlet property="details" destination="iOu-dV-2vq" id="dB4-hh-Ghg"/>
-                        <outlet property="gender" destination="iOu-dV-2vq" id="pIR-Us-pqp"/>
+                        <outlet property="details" destination="hY0-8Y-xJF" id="bR9-UW-3Ft"/>
+                        <outlet property="gender" destination="EQe-Ak-PaY" id="npe-yL-AF4"/>
                         <outlet property="name" destination="XzA-lx-l96" id="cYM-iG-Qeu"/>
                         <outlet property="phone" destination="Ymd-yU-4PS" id="4Ze-nh-OXy"/>
                         <outlet property="service" destination="YXF-Pb-bzk" id="krb-wJ-H20"/>
@@ -546,6 +546,9 @@
                                 <state key="normal" title="Button" image="user_center_middle_mysetting.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FRa-ri-Mcp" kind="push" id="ZaV-fr-TiY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zG2-VZ-UAV">
                                 <rect key="frame" x="160" y="274" width="160" height="100"/>
@@ -633,7 +636,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9z-w9-uqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="1549"/>
+            <point key="canvasLocation" x="2168" y="1549"/>
+        </scene>
+        <!--Setting View Controller - 设置-->
+        <scene sceneID="gpK-qO-ycg">
+            <objects>
+                <viewController id="FRa-ri-Mcp" customClass="GRSetting_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gE-7T-Vid">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zZ1-HY-YMH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FRa-ri-Mcp" id="jZQ-uF-pjW"/>
+                                    <outlet property="delegate" destination="FRa-ri-Mcp" id="oSU-bj-fUQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置" id="07i-uN-Of6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gW-Md-8DN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="1549"/>
         </scene>
         <!--Register View Controller - 用户注册-->
         <scene sceneID="g8t-wI-Q59">
@@ -879,10 +908,10 @@
             </objects>
             <point key="canvasLocation" x="1302" y="116"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Root Tab Bar View Controller-->
         <scene sceneID="6wI-cj-GbZ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JQz-Gn-p8D" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JQz-Gn-p8D" customClass="RootTabBar_ViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Xg3-IS-c65">
