@@ -216,27 +216,10 @@
                                     <segue destination="eqi-29-d8S" kind="push" identifier="QTFW" id="CVM-3z-zwc"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="DUg-Vd-4RC">
-                                <rect key="frame" x="0.0" y="63" width="320" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Abb-br-EQ2">
-                                        <rect key="frame" x="92" y="99" width="136" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <action selector="pageTurn:" destination="tXT-o1-Agr" eventType="valueChanged" id="qD3-im-Dkf"/>
-                                        </connections>
-                                    </pageControl>
-                                </subviews>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="预约服务" id="RKL-6k-eyt"/>
-                    <connections>
-                        <outlet property="myScrollView" destination="DUg-Vd-4RC" id="9dt-z8-PMd"/>
-                        <outlet property="pageControl" destination="Abb-br-EQ2" id="gIM-fl-C0V"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi2-kd-Oz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,6 +287,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKey:" destination="hVq-Qe-63O" eventType="editingDidEndOnExit" id="la5-p2-amN"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系电话：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WfV-g9-AXq">
                                 <rect key="frame" x="27" y="193" width="89" height="23"/>
@@ -324,6 +310,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKey:" destination="hVq-Qe-63O" eventType="editingDidEndOnExit" id="4kO-Uu-IZ4"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="EQe-Ak-PaY">
                                 <rect key="frame" x="127" y="140" width="163" height="29"/>
@@ -338,6 +327,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKey:" destination="hVq-Qe-63O" eventType="editingDidEndOnExit" id="4rZ-Hr-fxl"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务区域：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pAk-Ec-3JR">
                                 <rect key="frame" x="27" y="298" width="89" height="23"/>
@@ -346,12 +338,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="zH9-as-Ozk">
-                                <rect key="frame" x="127" y="295" width="163" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="hY0-8Y-xJF">
                                 <rect key="frame" x="127" y="346" width="163" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -377,9 +363,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKey:" destination="hVq-Qe-63O" eventType="editingDidEndOnExit" id="GdQ-f0-u9Y"/>
+                                    <action selector="slideFrameDown:" destination="hVq-Qe-63O" eventType="editingDidEnd" id="F5t-U4-YtJ"/>
+                                    <action selector="slideFrameUp:" destination="hVq-Qe-63O" eventType="editingDidBegin" id="KL3-CB-AUc"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="iOu-dV-2vq">
-                                <rect key="frame" x="127" y="294" width="163" height="30"/>
+                                <rect key="frame" x="127" y="295" width="163" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -389,12 +380,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKey:" destination="hVq-Qe-63O" eventType="editingDidEndOnExit" id="9pu-vM-AZR"/>
+                                    <action selector="slideFrameDown:" destination="hVq-Qe-63O" eventType="editingDidEnd" id="2GB-dr-A66"/>
+                                    <action selector="slideFrameUp:" destination="hVq-Qe-63O" eventType="editingDidBegin" id="bhA-sU-3nj"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="WMu-IJ-gXG">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZbA-pF-Dz0"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZbA-pF-Dz0">
+                            <connections>
+                                <action selector="saveDone:" destination="hVq-Qe-63O" id="sAF-oH-FOC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="Done" destination="ZbA-pF-Dz0" id="5ym-8G-iZw"/>
@@ -410,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6FD-v2-74p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="-1434"/>
+            <point key="canvasLocation" x="2108" y="-1434"/>
         </scene>
         <!--Navigation Controller - 个人中心-->
         <scene sceneID="0Cm-MZ-Fqq">
@@ -449,7 +449,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Irx-sD-r3V">
                                 <rect key="frame" x="180" y="351" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="注册.png">
+                                <state key="normal" image="注册-圆角.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -968,7 +968,7 @@
         <image name="意见反馈.png" width="320" height="190"/>
         <image name="政策助手-white.png" width="28" height="28"/>
         <image name="服务预约-white.png" width="28" height="28"/>
-        <image name="注册.png" width="172" height="58"/>
+        <image name="注册-圆角.png" width="172" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -24,4 +24,11 @@
 @property (retain, nonatomic) NSDictionary *stateArea;
 @property (retain, nonatomic) UIPickerView *cityPicker;
 
+- (IBAction)slideFrameUp:(id)sender;
+- (IBAction)slideFrameDown:(id)sender;
+- (IBAction)closeKey:(id)sender;
+
+- (IBAction)saveDone:(id)sender;
+- (void)slideFrame:(BOOL)up ;
+
 @end

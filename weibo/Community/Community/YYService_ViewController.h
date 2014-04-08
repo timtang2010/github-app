@@ -10,19 +10,27 @@
 
 
 @interface YYService_ViewController : UIViewController<UIScrollViewDelegate>
-{
-    NSMutableArray *imageArray;//存放图片
-    NSTimer *myTimer;//定时器
-}
-@property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
-//@property (weak, nonatomic) IBOutlet UIButton *JZButton;
-//@property (weak, nonatomic) IBOutlet UIButton *WXButton;
-//@property (weak, nonatomic) IBOutlet UIButton *DQButton;
-//@property (weak, nonatomic) IBOutlet UIButton *WYButton;
-//@property (weak, nonatomic) IBOutlet UIButton *QTButton;
-@property (weak ,nonatomic) NSString *array;
-- (IBAction)pageTurn:(UIPageControl *)sender;
+
+@property (strong, nonatomic) UIScrollView *scrollView;
+@property (strong, nonatomic) NSMutableArray *slideImages;
+@property (strong, nonatomic) UIPageControl *pageControl;
+
+/*
+ <UIScrollViewDelegate>
+ {
+ NSMutableArray *imageArray;//存放图片
+ NSTimer *myTimer;//定时器
+ }
+ @property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
+ @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+ //@property (weak, nonatomic) IBOutlet UIButton *JZButton;
+ //@property (weak, nonatomic) IBOutlet UIButton *WXButton;
+ //@property (weak, nonatomic) IBOutlet UIButton *DQButton;
+ //@property (weak, nonatomic) IBOutlet UIButton *WYButton;
+ //@property (weak, nonatomic) IBOutlet UIButton *QTButton;
+ @property (weak ,nonatomic) NSString *array;
+ - (IBAction)pageTurn:(UIPageControl *)sender;
+ */
 
 
 

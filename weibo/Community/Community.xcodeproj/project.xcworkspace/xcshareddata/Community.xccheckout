@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3BA6C35B-7A97-4A6B-BB37-38CEC5953268</string>
+	<string>8C61B685-5EF5-4284-B350-420236EB4D32</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Community</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2C24C072-2617-48A5-B4C0-87B37C8FD53B</key>
+		<key>DEE5D916-9B9E-4679-BDB6-8C261898B284</key>
 		<string>https://github.com/timtang2010/github-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>weibo/Community/Community.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2C24C072-2617-48A5-B4C0-87B37C8FD53B</key>
+		<key>DEE5D916-9B9E-4679-BDB6-8C261898B284</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2C24C072-2617-48A5-B4C0-87B37C8FD53B</string>
+	<string>DEE5D916-9B9E-4679-BDB6-8C261898B284</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2C24C072-2617-48A5-B4C0-87B37C8FD53B</string>
+			<string>DEE5D916-9B9E-4679-BDB6-8C261898B284</string>
 			<key>IDESourceControlWCCName</key>
 			<string>github app</string>
 		</dict>

@@ -79,7 +79,20 @@
     [myPickerToolBar setItems:barItems animated:YES];
     
     self.area.inputAccessoryView = myPickerToolBar;
-    self.details.inputView = myPickerToolBar;
+    self.details.inputAccessoryView = myPickerToolBar;
+    
+#pragma mark 打印选择状态
+    //设置默认的选择状态
+    self.gender.momentary = YES;
+    
+    //调用打印的方法
+    [self.gender addTarget:self
+                    action:@selector(segmentedControlTapper:)
+          forControlEvents:UIControlEventValueChanged];
+    
+    
+    self.area.inputAccessoryView = myPickerToolBar;
+    self.details.inputAccessoryView = myPickerToolBar;
 }
 
 - (void)pickerDoneClicker
@@ -149,4 +162,56 @@
 }
 */
 
+- (IBAction)slideFrameUp:(id)sender {
+    [self slideFrame:YES];
+    
+}
+
+- (IBAction)slideFrameDown:(id)sender {
+    [self slideFrame:NO];
+}
+
+- (IBAction)closeKey:(id)sender {
+    [self.name resignFirstResponder];
+    [self.phone resignFirstResponder];
+    [self.service resignFirstResponder];
+    [self.address resignFirstResponder];
+    [self.claim resignFirstResponder];
+}
+
+- (IBAction)saveDone:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示"
+                                                   message:@"保存成功" delegate:self
+                                         cancelButtonTitle:@"OK"
+                                         otherButtonTitles:nil];
+    [alert show];
+    //回调关闭键盘方法
+    [self closeKey:(id)sender];
+}
+
+- (void)slideFrame:(BOOL)up {
+    const int movementDistance = 150;//偏移量
+    const float movementDuration = 0.3f;//动画时间
+    
+    int movement = (up ? -movementDistance:movementDistance);
+    
+    [UIView beginAnimations:@"anim" context:nil];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    [UIView setAnimationDuration:movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
+}
+
+#pragma mark 打印分段控制器的状态
+- (void)segmentedControlTapper:(UISegmentedControl *)paramSender {
+    switch (paramSender.selectedSegmentIndex) {
+        case 0:
+            NSLog(@"你选择的是男");
+            break;
+            
+        default:
+            NSLog(@"你选择的是女");
+            break;
+    }
+}
 @end

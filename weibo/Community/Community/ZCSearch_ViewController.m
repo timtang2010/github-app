@@ -25,13 +25,13 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-/*
+/* */
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:@"Property List_XX" ofType:@"plist"];
     
     self.dictData = [[NSDictionary alloc] initWithContentsOfFile:path];
     self.listData = [self.dictData allKeys];
-*/
+
     
     self.tableView.SKSTableViewDelegate = self;
     
