@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F763406B-B78C-4368-98B6-08858F79E5F7</string>
+	<string>48134DD9-6B63-40C4-A995-009DDEF72450</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PlistTutorial</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DEE5D916-9B9E-4679-BDB6-8C261898B284</key>
+		<key>19CD88BA-A628-4291-A641-AD7593D13266</key>
 		<string>https://github.com/timtang2010/github-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PlistTutorial/PlistTutorial.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DEE5D916-9B9E-4679-BDB6-8C261898B284</key>
+		<key>19CD88BA-A628-4291-A641-AD7593D13266</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DEE5D916-9B9E-4679-BDB6-8C261898B284</string>
+	<string>19CD88BA-A628-4291-A641-AD7593D13266</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DEE5D916-9B9E-4679-BDB6-8C261898B284</string>
+			<string>19CD88BA-A628-4291-A641-AD7593D13266</string>
 			<key>IDESourceControlWCCName</key>
 			<string>github app</string>
 		</dict>

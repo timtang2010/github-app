@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Items</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>社区服务</string>
+			<key>level</key>
+			<integer>0</integer>
+			<key>SubItems</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>社区服务明细 0</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>社区服务明细 社区服务明细 0</string>
+							<key>level</key>
+							<integer>2</integer>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>社区服务明细 1</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>社区服务明细 社区服务明细1</string>
+							<key>level</key>
+							<integer>2</integer>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>社区服务明细 2</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>社区服务明细 社区服务明细2</string>
+							<key>level</key>
+							<integer>2</integer>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>社区服务明细 3</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>社区服务明细 社区服务明细3</string>
+							<key>level</key>
+							<integer>2</integer>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>社区服务明细 4</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>社区服务明细 社区服务明细4</string>
+							<key>level</key>
+							<integer>2</integer>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>社区服务明细 5</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>社区服务明细 社区服务明细5</string>
+							<key>level</key>
+							<integer>2</integer>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>社区服务明细 6</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>社区服务明细 社区服务明细6</string>
+							<key>level</key>
+							<integer>2</integer>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>政策服务</string>
+			<key>level</key>
+			<integer>0</integer>
+			<key>SubItems</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 0</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>政策服务明细 政策服务明细0</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 1</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>政策服务明细 政策服务明细1</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 2</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>政策服务明细 政策服务明细2</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 3</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>政策服务明细 政策服务明细3</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 4</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>政策服务明细 政策服务明细4</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 5</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>政策服务明细 政策服务明细5</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>医保服务</string>
+			<key>level</key>
+			<integer>0</integer>
+			<key>SubItems</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>医保服务明细 0</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>医保服务明细 医保服务明细0</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>医保服务明细 1</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>医保服务明细 医保服务明细1</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>医保服务明细 2</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>医保服务明细 医保服务明细2</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>医保服务明细 3</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>医保服务明细 医保服务明细3</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>医保服务明细 4</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>医保服务明细 医保服务明细4</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>医保服务明细 5</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>医保服务明细 医保服务明细5</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>医保服务明细 6</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>医保服务明细 医保服务明细6</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>政策服务</string>
+			<key>level</key>
+			<integer>0</integer>
+			<key>SubItems</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 0</string>
+					<key>level</key>
+					<integer>1</integer>
+					<key>DetailsItem</key>
+					<dict>
+						<key>Name</key>
+						<string>政策服务明细 政策服务明细0</string>
+						<key>Lever</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 1</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 2</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 3</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 4</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 5</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 6</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 7</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 8</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 9</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>政策服务明细 10</string>
+					<key>level</key>
+					<integer>1</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

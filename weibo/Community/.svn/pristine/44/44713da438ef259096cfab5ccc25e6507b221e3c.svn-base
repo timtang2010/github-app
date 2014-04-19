@@ -1,0 +1,241 @@
+//
+//  ZCHelper_TableViewController.m
+//  Community
+//
+//  Created by yuxin tang on 14-4-11.
+//  Copyright (c) 2014年 v5mcs. All rights reserved.
+//
+
+#import "ZCHelper_TableViewController.h"
+#import "ZCHelper_TableViewCell.h"
+
+@interface ZCHelper_TableViewController ()
+
+@end
+
+@implementation ZCHelper_TableViewController
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"Property List_XX" ofType:@"plist"]];
+    self.items = [dict
+                  valueForKey:@"Items"];
+    self.itemsInTable = [[NSMutableArray alloc]init];
+    [self.itemsInTable addObjectsFromArray:self.items];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+//#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+//#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return [self.itemsInTable count];
+}
+
+/**/
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *Title = [[self.itemsInTable objectAtIndex:indexPath.row] valueForKey:@"Name"];
+    
+    return [self createCellWithTitle:Title image:[[self.itemsInTable objectAtIndex:indexPath.row]valueForKey:@"Image name"]indexPath:indexPath];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *dic = [self.itemsInTable objectAtIndex:indexPath.row];
+    if ([dic valueForKey:@"SubItems"]) {
+        NSArray *arr = [dic valueForKey:@"SubItems"];
+        BOOL isTableExpanded = NO;
+        
+        for (NSDictionary *subitems in arr) {
+            NSInteger index = [self.itemsInTable indexOfObjectIdenticalTo:subitems];
+            isTableExpanded = (index > 0 && index != NSIntegerMax);
+            if (isTableExpanded)
+                break;
+        }
+        
+        if (isTableExpanded) {
+            [self CollapseRows:arr];
+        }
+        else {
+            NSInteger count = indexPath.row + 1;
+            NSMutableArray *arrCells = [NSMutableArray array];
+            for (NSDictionary * dInner in arr) {
+                [arrCells addObject:[NSIndexPath indexPathForRow:count inSection:0]];
+                [self.itemsInTable insertObject:dInner atIndex:count++];
+            }
+            [self.menuTableView insertRowsAtIndexPaths:arrCells withRowAnimation:UITableViewRowAnimationLeft];
+        }
+    }
+}
+
+- (void)CollapseRows:(NSArray *)ar
+{
+    for (NSDictionary *dInner in ar) {
+        NSUInteger indexToRemove = [self.itemsInTable indexOfObjectIdenticalTo:dInner];
+        NSArray *arInner = [dInner valueForKey:@"SubItems"];
+        if (arInner &&  [arInner count]>0) {
+            [self CollapseRows:arInner];
+        }
+        if ([self.itemsInTable indexOfObjectIdenticalTo:dInner]!=NSNotFound) {
+            [self.itemsInTable removeObjectIdenticalTo:dInner];
+            [self.menuTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:indexToRemove inSection:0]] withRowAnimation:UITableViewRowAnimationLeft];
+        }
+    }
+}
+
+- (UITableViewCell *)createCellWithTitle:(NSString *)title image:(UIImage *)image indexPath: (NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = @"Cell";
+    ZCHelper_TableViewCell *cell = [self.menuTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UIView *bgView = [[UIView alloc]init];
+    bgView.backgroundColor = [UIColor grayColor];
+    cell.selectedBackgroundView = bgView;
+    cell.lblTitle.text = title;
+    cell.lblTitle.textColor = [UIColor blackColor];
+    
+    [cell setIndentationLevel:[[[self.itemsInTable objectAtIndex:indexPath.row]valueForKey:@"lever"]intValue]];
+    cell.indentationWidth = 25;
+    
+    float indentPoints = cell.indentationLevel * cell.indentationWidth;
+    
+    cell.contentView.frame = CGRectMake(indentPoints,
+                                        cell.contentView.frame.origin.y,
+                                        cell.contentView.frame.size.width - indentPoints,
+                                        cell.contentView.frame.size.height);
+    
+    NSDictionary *d1=[self.itemsInTable objectAtIndex:indexPath.row];
+    
+    if ([d1 valueForKey:@"SubItems"]) {
+        cell.btnExpand.alpha = 1.0;
+        [cell.btnExpand addTarget:self
+                           action:@selector(showSubItems:)
+                 forControlEvents:UIControlEventTouchUpInside];
+    }
+    else {
+        cell.btnExpand.alpha = 0.0;
+    }
+    return cell;
+    
+}
+
+- (void)showSubItems :(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    CGRect buttonFrameInTableView = [btn convertRect:btn.bounds toView:self.menuTableView];
+    NSIndexPath *indexPath = [self.menuTableView indexPathForRowAtPoint:buttonFrameInTableView.origin];
+    
+    if (btn.alpha == 1.0) {
+        if ([[btn imageForState:UIControlStateNormal] isEqual:[UIImage imageNamed:@"carat.png"]]) {
+            
+            [btn setImage:[UIImage imageNamed:@"carat-open.png"] forState:UIControlStateNormal];
+        }
+        else
+        {
+            [btn setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
+        }
+    }
+    NSDictionary *d = [self.itemsInTable objectAtIndex:indexPath.row];
+    NSArray *arr = [d valueForKey:@"SubItems"];
+    if ([d valueForKey:@"SubItems"]) {
+        BOOL isTableExpanded= NO;
+        for (NSDictionary *subitems in arr) {
+            NSInteger index = [self.itemsInTable indexOfObjectIdenticalTo:subitems];
+            isTableExpanded = (index > 0 && index !=NSIntegerMax);
+            if (isTableExpanded)
+                break;
+        }
+        if (isTableExpanded) {
+            [self CollapseRows:arr];
+        }
+        else {
+            NSUInteger count=indexPath.row+1;
+            NSMutableArray *arrCells = [NSMutableArray array];
+            for (NSDictionary *dInner in arr) {
+                [arrCells addObject:[NSIndexPath indexPathForRow:count inSection:0]];
+                [self.itemsInTable insertObject:dInner atIndex:count++];
+            }
+            [self.menuTableView insertRowsAtIndexPaths:arrCells withRowAnimation:UITableViewRowAnimationLeft];
+        }
+    }
+}
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+*/
+
+/*
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
+}
+*/
+
+/*
+// Override to support rearranging the table view.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+}
+*/
+
+/*
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the item to be re-orderable.
+    return YES;
+}
+*/
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

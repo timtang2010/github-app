@@ -1,0 +1,44 @@
+//
+//  YYService_YY_ViewController.h
+//  Community
+//
+//  Created by WEB08-V5MCS006 on 14-4-10.
+//  Copyright (c) 2014年 v5mcs. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "UITableView+DataSourceBlocks.h"
+
+@class TableViewWithBlock;
+
+@interface YYService_YY_ViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
+{
+    BOOL isOpened;
+}
+
+@property (strong, nonatomic) IBOutlet UIButton *openButton1;
+@property (strong, nonatomic) IBOutlet UIButton * openButton2;
+
+@property (strong, nonatomic) IBOutlet UITextField *districtTextField;
+@property (strong, nonatomic) IBOutlet UITextField *streetTextField;
+
+@property (strong, nonatomic) IBOutlet TableViewWithBlock * tableViewWithBlock1;
+@property (strong, nonatomic) IBOutlet TableViewWithBlock * tableViewWithBlock2;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSDictionary * dic;
+@property (strong, nonatomic) NSArray * keys;
+@property (strong, nonatomic) NSArray * values;
+
+@property NSInteger keyCount;
+@property NSInteger valueCount;
+
+- (IBAction)changeOpenStatus1:(id)sender;
+- (IBAction)changeOpenStatus2:(id)sender;
+
+- (void)configTableViewBlock;
+
+- (IBAction)pushGaodeMapView:(id)sender;
+
+@end

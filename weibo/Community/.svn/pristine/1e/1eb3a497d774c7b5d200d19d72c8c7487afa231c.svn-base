@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>new</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>联洋二居委高血压测量小组活动</string>
+			<key>url</key>
+			<string>http://www.88547.com/news/details/923852</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>参观学习，交流共进</string>
+			<key>url</key>
+			<string>http://www.88547.com/news/details/923850</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>收看群教节目</string>
+			<key>url</key>
+			<string>http://www.88547.com/news/details/923845</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>拾金不昧暖人心</string>
+			<key>url</key>
+			<string>http://www.88547.com/news/details/923837</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>群众路线教育之三——“中国梦”宣讲</string>
+			<key>url</key>
+			<string>http://www.88547.com/news/details/923832</string>
+		</dict>
+	</array>
+</dict>
+</plist>

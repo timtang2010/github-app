@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<array>
+		<string>上海市顺心管道疏通维修服务社</string>
+		<string>上海时利和保洁有限公司</string>
+		<string>上海晶丰家政服务有限公司</string>
+	</array>
+	<key>address</key>
+	<array>
+		<string>黄浦区江西南路96号108室</string>
+		<string>上海市田林十四村61号</string>
+		<string>杨浦区凤城二村2号乙</string>
+		<string></string>
+	</array>
+	<key>phone</key>
+	<array>
+		<string>962200</string>
+		<string>962200</string>
+		<string>962200</string>
+	</array>
+	<key>image</key>
+	<array>
+		<string>2.png</string>
+		<string>2.png</string>
+		<string>3.png</string>
+	</array>
+</dict>
+</plist>

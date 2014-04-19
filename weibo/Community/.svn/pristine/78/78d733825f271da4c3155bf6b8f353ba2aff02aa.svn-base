@@ -1,0 +1,79 @@
+//
+//  YYService_YY_GaodeViewController.m
+//  Community
+//
+//  Created by yuxin tang on 14-4-17.
+//  Copyright (c) 2014年 v5mcs. All rights reserved.
+//
+
+#import "YYService_YY_GaodeViewController.h"
+
+@interface YYService_YY_GaodeViewController ()
+
+@end
+
+@implementation YYService_YY_GaodeViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [MAMapServices sharedServices].apiKey = @"9156df152c43e9ab456157f8b9c3e477";
+    
+    [super viewWillAppear:animated];
+    //高德地图
+    // battery 20 nav 44
+    int statusHeight = 64;
+    self.mapView = [[MAMapView alloc]initWithFrame:CGRectMake(0, statusHeight, 320, 568 - 108)];
+    self.mapView.delegate = self;
+    [self.view addSubview:self.mapView];
+    //黑框
+    int myViewPosY = self.mapView.frame.origin.y + self.mapView.frame.size.height;
+    UIView *myview = [[UIView alloc]initWithFrame:CGRectMake(0, myViewPosY, 320, 568 - myViewPosY)];
+    myview.backgroundColor = [UIColor blackColor];
+    //按钮
+    //    UIButton * btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    //    btn.frame = CGRectMake(20, 20, 30, 30);
+    //    [myview addSubview:btn];
+    //分页栏
+    UISegmentedControl * seg1 = [[UISegmentedControl alloc] initWithItems:@[@"开始", @"停止"]];
+    UISegmentedControl * seg2 = [[UISegmentedControl alloc] initWithItems:@[@"无", @"跟随", @"头"]];
+    [myview addSubview:seg1];
+    [myview addSubview:seg2];
+    
+    seg1.frame = CGRectMake(22, 7, 90, 30);
+    seg2.frame = CGRectMake(132, 7, 150, 30);
+    [self.view addSubview:myview];
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

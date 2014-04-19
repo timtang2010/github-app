@@ -1,0 +1,25 @@
+//
+//  YYService_YY_ViewController.h
+//  Community
+//
+//  Created by WEB08-V5MCS006 on 14-4-10.
+//  Copyright (c) 2014年 v5mcs. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "UITableView+DataSourceBlocks.h"
+
+@class TableViewWithBlock;
+
+@interface YYService_YY_ViewController : UIViewController <UITextFieldDelegate>
+{
+    BOOL isOpened;
+}
+
+@property (strong, nonatomic) IBOutlet UIButton *openButton;
+@property (strong, nonatomic) IBOutlet UITextField *inputTextField;
+@property (strong, nonatomic) IBOutlet TableViewWithBlock *tableViewWithBlock;
+
+- (IBAction)changeOpenStatus:(id)sender;
+
+@end
