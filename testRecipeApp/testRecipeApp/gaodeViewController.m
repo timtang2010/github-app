@@ -10,6 +10,8 @@
 
 @interface gaodeViewController ()
 
+@property (nonatomic,strong) UIPageControl *showSegmeng;
+
 @property (nonatomic, strong)UISegmentedControl *showSegment;
 
 @property (nonatomic, strong)UISegmentedControl *modeSegment;
